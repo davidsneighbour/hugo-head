@@ -1,0 +1,15 @@
+{{- /* TODO optimise title creation */ -}}
+{{ if .IsHome }}
+  <title>{{ site.Title }}</title>
+{{ else }}
+  <title>
+    {{- .Title -}}
+    {{- if .IsNode }}
+      {{ if gt .Paginator.PageNumber 1 }}
+        (Page {{ .Paginator.PageNumber }})
+      {{ end }}
+    {{ end -}}
+    {{- site.Params.dnb.head.separator | default " | " -}}
+    {{- site.Title -}}
+  </title>
+{{ end }}
