@@ -5,6 +5,8 @@
 
 This is a GoHugo theme component that solves the old question "what tags belong into the `<head>` tag of my website. Set it up, configure it, forget it's there. This component adds a multitude of tags and is extensively configurable.
 
+If you want to independently of this module learn about all that is possible in the `<head>` tag then have a look at [htmlhead.dev](https://htmlhead.dev/)
+
 ## Installing
 
 First enable modules in your own repository:
@@ -79,6 +81,7 @@ parameter = value
 - head-end
 
 <!--- COMPONENTS BEGIN --->
+
 ## Other [GoHugo](https://gohugo.io/) components by [@dnb-org](https://github.com/dnb-org/)
 
 | Component                                                                     | Description                                                |
