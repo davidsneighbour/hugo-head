@@ -34,7 +34,10 @@ https://htmlhead.dev/
 {{- if templates.Exists ( printf "partials/%s" $partialPath ) -}}
   {{- partialCached $partialPath . -}}
 {{- end -}}
-{{- partialCached "head/pwa.html" . -}}
+{{- $partialPath := "head/pwa.html" -}}
+{{- if templates.Exists ( printf "partials/%s" $partialPath ) -}}
+  {{- partialCached $partialPath . -}}
+{{- end -}}
 {{- partialCached "head/verification.html" . -}}
 {{- partialCached "head/alternates.html" . -}}
 {{- partial "head/others.html" . -}}
