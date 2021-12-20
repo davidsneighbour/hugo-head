@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.3...v0.0.4) (2021-12-20)
+
+
+### Documentation
+
+* cleanup README.md ([42bf79d](https://github.com/dnb-org/dnb-hugo-head/commit/42bf79d8bac2696ecc2144ad7f9e58530d202af9))
+
+
+### Chore
+
+* **deps:** update dependencies ([7fa21b7](https://github.com/dnb-org/dnb-hugo-head/commit/7fa21b73cf8ae57964d59f5dff4f14a961966531))
+
 ### [0.0.3](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.2...v0.0.3) (2021-12-20)
 
 

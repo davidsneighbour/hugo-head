@@ -101,7 +101,7 @@ parameter = value
 
 <!-- prettier-ignore -->
 | Component | Description |
-| :---------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| :--- | :--- |
 | [dnb-hugo-auditor](https://github.com/dnb-org/dnb-hugo-auditor) | |
 | [dnb-hugo-debug](https://github.com/dnb-org/dnb-hugo-debug) :mage_man: | |
 | [dnb-hugo-errors](https://github.com/dnb-org/dnb-hugo-errors) | |
