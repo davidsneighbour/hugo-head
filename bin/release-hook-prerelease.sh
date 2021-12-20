@@ -13,6 +13,9 @@ if test -f "$SCRIPTPATH"/replacements; then
   done < "$SCRIPTPATH"/replacements
 fi
 
+bash "$SCRIPTPATH"/dnb-hugo-prepare-files.sh
+git add README.md
+
 hugo mod get -u ./...
 hugo mod tidy
 
