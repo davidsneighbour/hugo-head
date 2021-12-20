@@ -74,11 +74,16 @@ parameter = value
 
 ## Hooks
 
-- head-init
-- head-start
-- head-pre-css
-- head-post-css
-- head-end
+`dnb-hugo-head` implements template hooks via [`dnb-hugo-hooks`](https://github.com/dnb-org/dnb-hugo-hooks) and makes the following hooks available:
+
+<!-- prettier-ignore -->
+| Hook          | Description       |
+| ------------- | :---------------- |
+| head-init     | After the opening `head` tag. Do not open this to output anything. Just for initialising any of your plugins. |
+| head-start    | After the initial first tags that belong at the beginning of your `head` section. |
+| head-pre-css  | Before the stylesheets are printed. |
+| head-post-css | After the stylesheets are printed. |
+| head-end      | At the end of the `head` right before the closing tag. |
 
 <!--- COMPONENTS BEGIN --->
 
