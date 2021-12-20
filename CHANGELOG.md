@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.4...v0.0.5) (2021-12-20)
+
+
+### Build System
+
+* **fix:** remove unused path ([41a2c02](https://github.com/dnb-org/dnb-hugo-head/commit/41a2c02c9704a81933ad14783a3b164ca09649ff))
+
+
+### Chore
+
+* **config:** add remarkignore ([d092f8f](https://github.com/dnb-org/dnb-hugo-head/commit/d092f8f15d1c6a9e37262bf6ecbd8da7c9c5ed44))
+
 ### [0.0.4](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.3...v0.0.4) (2021-12-20)
 
 
