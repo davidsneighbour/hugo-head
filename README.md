@@ -1,3 +1,6 @@
+![DNB-Hugo/HEAD](.github/github-card-head-dark.png#gh-dark-mode-only)
+![DNB-Hugo/HEAD](.github/github-card-head-light.png#gh-light-mode-only)
+
 # DNB GoHugo Component / Head
 
 This is a GoHugo theme component that solves the old question "what tags belong into the `<head>` tag of my website. Set it up, configure it, forget it's there. This component adds a multitude of tags and is extensively configurable.
@@ -75,43 +78,30 @@ parameter = value
 - head-post-css
 - head-end
 
-<!-- other_components -->
+<!--- COMPONENTS BEGIN --->
+## Other [GoHugo](https://gohugo.io/) components by [@dnb-org](https://github.com/dnb-org/)
 
-## Other components in DNB Hugo components
+| Component                                                                     | Description                                                |
+| :---------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| [dnb-hugo-auditor](https://github.com/dnb-org/dnb-hugo-auditor)               |                                                            |
+| [dnb-hugo-debug](https://github.com/dnb-org/dnb-hugo-debug) :mage_man:        |                                                            |
+| [dnb-hugo-errors](https://github.com/dnb-org/dnb-hugo-errors)                 |                                                            |
+| [dnb-hugo-functions](https://github.com/dnb-org/dnb-hugo-functions)           |                                                            |
+| [dnb-hugo-giscus](https://github.com/dnb-org/dnb-hugo-giscus)                 | The Giscus comment system layout for GoHugo.               |
+| [dnb-hugo-head](https://github.com/dnb-org/dnb-hugo-head)                     |                                                            |
+| [dnb-hugo-hooks](https://github.com/dnb-org/dnb-hugo-hooks)                   | GoHugo's missing hook system for template extensions.      |
+| [dnb-hugo-internals](https://github.com/dnb-org/dnb-hugo-internals)           | Better internal templates for GoHugo                       |
+| [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification)   | a collection of tools that optimize your site on Netlify   |
+| [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch)         | configuration for Open Search                              |
+| [dnb-hugo-pictures](https://github.com/dnb-org/dnb-hugo-pictures)             |                                                            |
+| [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa)                       | Automatically turns your site into a PWA                   |
+| [dnb-hugo-renderhooks](https://github.com/dnb-org/dnb-hugo-renderhooks)       | render hooks for Markdown markup                           |
+| [dnb-hugo-robots](https://github.com/dnb-org/dnb-hugo-robots)                 | configure the content of your robots.txt with front matter |
+| [dnb-hugo-schema](https://github.com/dnb-org/dnb-hugo-schema)                 |                                                            |
+| [dnb-hugo-search-algolia](https://github.com/dnb-org/dnb-hugo-search-algolia) |                                                            |
+| [dnb-hugo-security](https://github.com/dnb-org/dnb-hugo-security)             |                                                            |
+| [dnb-hugo-sitemap](https://github.com/dnb-org/dnb-hugo-sitemap)               |                                                            |
+| [dnb-hugo-social](https://github.com/dnb-org/dnb-hugo-social)                 |                                                            |
 
-| Component                                                                        | Description                                                |
-| :------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-| [auditor](https://github.com/dnb-org/components/tree/main/auditor)               |                                                            |
-| [favicon](https://github.com/dnb-org/components/tree/main/favicon)               |                                                            |
-| [functions](https://github.com/dnb-org/components/tree/main/functions)           |                                                            |
-| [netlification](https://github.com/dnb-org/components/tree/main/netlification)   | a collection of tools that optimize your site on Netlify   |
-| [opensearch](https://github.com/dnb-org/components/tree/main/opensearch)         | configuration for Open Search                              |
-| [pwa](https://github.com/dnb-org/components/tree/main/pwa)                       | Automatically turns your site into a PWA                   |
-| [renderhooks](https://github.com/dnb-org/components/tree/main/renderhooks)       | render hooks for Markdown markup                           |
-| [robots](https://github.com/dnb-org/components/tree/main/robots)                 | configure the content of your robots.txt with front matter |
-| [search-algolia](https://github.com/dnb-org/components/tree/main/search-algolia) |                                                            |
-| [search-lunrjs](https://github.com/dnb-org/components/tree/main/search-lunrjs)   |                                                            |
-| [sitemap](https://github.com/dnb-org/components/tree/main/sitemap)               |                                                            |
-| [social](https://github.com/dnb-org/components/tree/main/social)                 |                                                            |
-| [welcomments](https://github.com/dnb-org/components/tree/main/welcomments)       |                                                            |
-
-<!-- /other_components -->
-
-<!-- other_elements -->
-
-## Other elements in DNB Hugo
-
-[DNB Hugo](https://github.com/dnb-org) are the elements that enhance and simplify your daily work with [Hugo, the world's fastest framework for building websites](https://gohugo.io/). Included are:
-
-| Element                                                     | Description                                                                                                       |
-| :---------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [blocks](https://github.com/dnb-org/blocks)                 | Blocks are reusable page elements like headers, footers, content display etc.                                     |
-| [components](https://github.com/dnb-org/components)         | Components are preconfigured features like automatic search index creation, sitemap and robots.txt creation, etc. |
-| [configurations](https://github.com/dnb-org/configurations) | A collection of configuration packages used in dnb-org                                                            |
-| [debug](https://github.com/dnb-org/debug)                   | Debugging for your Hugo layout files.                                                                             |
-| [hooks](https://github.com/dnb-org/hooks)                   | Template hooks for Hugo themes                                                                                    |
-| [libraries](https://github.com/dnb-org/libraries)           | Libraries are a collection of often used external packages, conveniently configured as modules for Hugo.          |
-| [shortcodes](https://github.com/dnb-org/shortcodes)         | Shortcodes are content particles that helpfully solve repeated tasks, like presentation, galleries and so on.     |
-| [testcontent](https://github.com/dnb-org/testcontent)       | Testcontent is a collection of testing content. Obviously.                                                        |
-
-<!-- /other_elements -->
+<!--lint disable no-missing-blank-lines -->
+<!--- COMPONENTS END --->
