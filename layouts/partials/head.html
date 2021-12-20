@@ -30,7 +30,10 @@ https://htmlhead.dev/
 {{- partial "head/seo.html" . -}}
 {{- partial "head/series.html" . -}}
 {{- partial "head/social-graph.html" . -}}
-{{- partialCached "head/opensearch.html" . -}}
+{{- $partialPath := "head/opensearch.html" -}}
+{{- if templates.Exists ( printf "partials/%s" $partialPath ) -}}
+  {{- partialCached $partialPath . -}}
+{{- end -}}
 {{- partialCached "head/pwa.html" . -}}
 {{- partialCached "head/verification.html" . -}}
 {{- partialCached "head/alternates.html" . -}}
