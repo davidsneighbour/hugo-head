@@ -1,20 +1,24 @@
 #!/usr/bin/env bash
 
-# declare path to this script
-SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
+REQUIRED_TOOLS=(
+  git
+  hugo
+)
 
-# TODO read component names into array
-# TODO read replacement configuration into array
+for TOOL in "${REQUIRED_TOOLS[@]}"; do
+  if ! command -v "${TOOL}" >/dev/null; then
+    echo "${TOOL} is required... "
+    exit 1
+  fi
+done
 
-# remove replacement scripts
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
-    go mod edit -dropreplace "${__[0]}"
+    go mod edit -dropreplace ${__[0]}
   done < "$SCRIPTPATH"/replacements
 fi
-
-bash "$SCRIPTPATH"/dnb-hugo-prepare-files.sh
-git add README.md
 
 hugo mod get -u ./...
 hugo mod tidy
@@ -24,6 +28,6 @@ git add go.sum
 
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
-    go mod edit -replace "${__[0]}"="${__[1]}"
+    go mod edit -replace ${__[0]}=${__[1]}
   done < "$SCRIPTPATH"/replacements
 fi

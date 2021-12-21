@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 REQUIRED_TOOLS=(
-  git
+  hugo
+  npm
 )
 
 for TOOL in "${REQUIRED_TOOLS[@]}"; do
@@ -11,8 +12,7 @@ for TOOL in "${REQUIRED_TOOLS[@]}"; do
   fi
 done
 
-git add data/dnb/build/
-git commit --amend --no-edit
-
-git push --follow-tags origin main
-git push --tags
+hugo mod get -u ./...
+rm -rf public/
+npm run build
+node ./bin/algolia-reindex.ts
