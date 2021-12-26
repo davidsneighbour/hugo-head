@@ -106,7 +106,7 @@ To be written.
 
 ### Translations
 
-To be written.
+If the current page has a translation then it will be linked in your header. I don't see anything that requires configuration here, so please open a new issue if you need specific setups.
 
 ### SEO
 

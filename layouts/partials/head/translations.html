@@ -1,1 +1,5 @@
-{{/* <link rel="alternate" href="https://es.example.com/" hreflang="es"> */}}
+{{- if .IsTranslated -}}
+  {{- range .Translations -}}
+    <link rel="alternate" href="{{- .Permalink -}}" hreflang="{{- .Lang -}}" title="{{- .Title -}}">
+  {{- end -}}
+{{- end -}}
