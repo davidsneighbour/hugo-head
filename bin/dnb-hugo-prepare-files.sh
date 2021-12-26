@@ -29,12 +29,10 @@ node ./node_modules/replace-between/bin/replace-between.js \
   --target README.md \
   --token COMPONENTS
 
-
 node ./node_modules/replace-between/bin/replace-between.js \
   --source "${TEMPLATEPATH}"/readme/installupdate.md \
   --target README.md \
   --token INSTALLUPDATE
-
 
 node ./node_modules/replace-between/bin/replace-between.js \
   --source "${TEMPLATEPATH}"/readme/thingstoknow.md \
