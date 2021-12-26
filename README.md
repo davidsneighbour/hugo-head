@@ -5,7 +5,7 @@
 
 <!--- CARD END --->
 
-# DNB GoHugo Component / Head
+# DNB GoHugo Component / HEAD
 
 This is a GoHugo theme component that solves the old question "What tags belong into the `<head>` tag of my website?" Set it up, configure it, forget it's there. This component adds a multitude of tags and is extensively configurable.
 
@@ -56,6 +56,7 @@ hugo mod get -u $REPONAME$
 # update all modules
 hugo mod get -u #
 ```
+
 <!--- INSTALLUPDATE END --->
 
 ## Configuration parameters
@@ -72,39 +73,101 @@ parameter = value
 
 ### General setup
 
-`head.html` uses opiniated defaults that can be overridden via configuration:
+`dnb-hugo-head` uses opiniated defaults that can be overridden via configuration:
 
-- `meta > charset` (default: "utf-8")
-- `meta > viewport` (default: "width=device-width, initial-scale=1")
-- `base` uses the `baseURL` parameter of the global configuration object
+```toml
+[dnb.head]
+charset = "utf-8"
+viewport = "width=device-width, initial-scale=1"
+
+```
+
+It also uses the `baseURL`-parameter of the global configuration object for the `base`-tag.
 
 ### `title` generation
 
+To be written.
+
 ### Speed optimisation
+
+To be written.
 
 ### `description` generation
 
+To be written.
+
 ### Author generation
+
+To be written.
 
 ### Stylesheets
 
+To be written.
+
 ### Translations
+
+To be written.
 
 ### SEO
 
+To be written.
+
 ### Series
+
+To be written.
 
 ### Social Graph
 
+**Note:** This plugin is not ready for prime time yet.
+
+If you are using [`dnb-hugo-social`](https://github.com/dnb-org/dnb-hugo-social) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-social) automatically for you.
+
 ### Open Search
+
+If you are using [`dnb-hugo-opensearch`](https://github.com/dnb-org/dnb-hugo-opensearch) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. Don't forget to [configure the module](https://github.com/dnb-org/dnb-hugo-opensearch#configuration) in your configuration.
 
 ### PWA
 
+If you are using [`dnb-hugo-pwa`](https://github.com/dnb-org/dnb-hugo-pwa) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. **Note**, that it does NOT include anything in the footer, so these tags still need to be added in your own templates.
+
 ### Verification
+
+`dnb-hugo-head` can add verification-meta-tag to your header for any of the following services. Just add the value of the meta-tag to your configuration.
+
+```toml
+[params.dnb.head.verification]
+google = ""
+yandex = ""
+bing = ""
+alexa = ""
+pinterest = ""
+norton = ""
+
+```
+
+**Note: If you can then use verification via a file in your site root or via DNS record to minimise the output on your pages. The less headers you have the better.**
 
 ### Alternates
 
+`dnb-hugo-head` prints all configured alternate links for a page. If you find alternates for output types you do not wish to include, then you have configured your output format wrong. Have a look at the documentation of [`notAlternative`](https://gohugo.io/templates/output-formats#configure-output-formats) and [how to enable/disable output formats](https://gohugo.io/templates/output-formats/#customizing-output-formats).
+
 ### Others
+
+`dnb-hugo-head` can add various obscure and weird other tags to your headers. You can enable and disable them by setting the following parameters. Think about the usefulnes of these tags though, less is more again.
+
+```toml
+[params.dnb.head.verification]
+disable = ["referrer", "phone_transcription"]
+notranslate = false
+monetization = ""
+latitude = ""
+longitude = ""
+region = ""
+placename = ""
+
+```
+
+- [ ] TODO more explicit description of these tags
 
 ## Hooks
 
@@ -113,7 +176,7 @@ parameter = value
 <!-- prettier-ignore -->
 | Hook | Description |
 | --- | :--- |
-| head-init | Hooks in after the opening `head` tag. Do not open this to output anything. Just for initialising any of your plugins. |
+| head-init | Hooks in after the opening `head` tag. Do not open this to output anything. Just to initialise any of your plugins. |
 | head-start | Hooks in after the initial first tags that belong at the beginning of your `head` section. |
 | head-pre-css | Hooks in before the stylesheets are printed. |
 | head-post-css | Hooks in after the stylesheets are printed. |
