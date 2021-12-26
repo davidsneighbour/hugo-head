@@ -2,19 +2,31 @@
   "name": "dnb-hugo-head",
   "version": "0.0.6",
   "license": "MIT",
-  "description": "head tags for GoHugo",
-  "author": {
-    "name": "Patrick Kollitsch",
-    "email": "patrick@davids-neighbour.com",
-    "web": "https://davids-neighbour.com"
-  },
-  "homepage": "https://github.com/dnb-org/dnb-hugo-head",
+  "description": "DNB's answer to the question 'What tags belong into the <head> tag of my website?'",
+  "author": "Patrick Kollitsch <patrick@davids-neighbour.com> (https://davids-neighbour.com)",
+  "homepage": "https://github.com/dnb-org/dnb-hugo-head#readme",
   "repository": "dnb-org/dnb-hugo-head",
   "bugs": "https://github.com/dnb-org/dnb-hugo-head/issues",
+  "dependencies": {
+    "mem": "^9.0.1",
+    "trim": "^1.0.1"
+  },
   "devDependencies": {
+    "@dnb-org/babel-config": "^3.4.4",
+    "@dnb-org/bootstrap-config": "^3.4.4",
+    "@dnb-org/browserslist-config": "^3.4.4",
+    "@dnb-org/commitlint-config": "^3.4.5",
+    "@dnb-org/cssnano-config": "^3.4.5",
+    "@dnb-org/cypress-config": "^3.4.6",
+    "@dnb-org/eslint-config": "^3.4.19",
+    "@dnb-org/postcss-config": "^3.4.5",
+    "@dnb-org/prettier-config": "^3.4.6",
     "@dnb-org/remark-config": "^3.4.4",
     "@dnb-org/standard-version-config": "^3.4.3",
-    "@dnb-org/tools": "^3.4.5"
+    "@dnb-org/stylelint-config": "^3.4.4",
+    "@dnb-org/textlint-config": "^3.4.5",
+    "@dnb-org/tools": "^3.4.5",
+    "@dnb-org/webpack-config": "^3.4.6"
   },
   "scripts": {
     "audit:hugo": "./bin/dnb-hugo-audit.sh",
@@ -30,13 +42,13 @@
     "clean:npm": "rimraf node_modules package-lock.json",
     "commit": "./node_modules/cz-customizable/standalone.js",
     "lighthouse": "bin/lighthouse.sh",
+    "lint:remark": "remark",
+    "lint:remark2": "remark .",
     "lint:scripts": "eslint assets/js --ext .ts",
     "lint:scripts:fix": "eslint assets/js --ext .ts --fix",
     "lint:styles": "stylelint assets/scss",
     "lint:styles:fix": "stylelint assets/scss --fix",
     "lint:templates": "bin/lint-templates.sh",
-    "lint:remark": "remark",
-    "lint:remark2": "remark .",
     "prettier": "prettier 'assets/**/*.ts'",
     "prettier:fix": "prettier --write 'assets/**/*.ts'",
     "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
@@ -48,15 +60,10 @@
     "server": "npm run serve"
   },
   "private": true,
-  "slug": "dnb-hugo-functions",
-  "dependencies": {
-    "jshint": "^2.13.1",
-    "mem": "^9.0.1",
-    "trim": "^1.0.1"
-  },
   "remarkConfig": {
     "plugins": [
       "@dnb-org/remark-config"
     ]
-  }
+  },
+  "slug": "dnb-hugo-head"
 }
