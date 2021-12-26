@@ -62,12 +62,11 @@ hugo mod get -u #
 ## Configuration parameters
 
 - All configuration is located in the params section below `params.dnb.head`.
-- All samples in this document are documented in TOML and assume the section header is already present above them.
+- The order of the configuration documentation relects the order of appearance of these tags in the head.
 
 ```toml
-[params]
-[params.dnb]
-[params.dnb.head]
+[dnb]
+[dnb.head]
 parameter = value
 ```
 
@@ -96,10 +95,6 @@ To be written.
 
 To be written.
 
-### Author generation
-
-To be written.
-
 ### Stylesheets
 
 To be written.
@@ -118,7 +113,7 @@ To be written.
 
 ### Social Graph
 
-**Note:** This plugin is not ready for prime time yet.
+**Note:** This plugin is not ready for prime time yet and does nothing. Expect this to change within January 2022.
 
 If you are using [`dnb-hugo-social`](https://github.com/dnb-org/dnb-hugo-social) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-social) automatically for you.
 
