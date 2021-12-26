@@ -13,7 +13,7 @@
 {{- partial "head/translations.html" . -}}
 {{- partial "head/seo.html" . -}}
 {{- partial "head/series.html" . -}}
-{{- $paths := slice "head/social.html" "head/opensearch.html" "head/pwa.html" -}}
+{{- $paths := slice "head/social.html" "head/opensearch.html" "head/pwa.html" "head/humans.txt" -}}
 {{- range $paths -}}
   {{- if templates.Exists ( printf "partials/%s" . ) -}}
     {{- partialCached . . -}}

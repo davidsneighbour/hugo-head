@@ -98,7 +98,17 @@ To be written.
 
 ### Author generation
 
-To be written.
+The author tags generation is quite small still, but expect larger changes in the future. Right now `dnb-hugo-head` can transform the following configuration parameters into header tags that add author information:
+
+```toml
+[author]
+name = "name"
+email = "email"
+homepage = "website"
+
+```
+
+If you are using [`dnb-hugo-humans`](https://github.com/dnb-org/dnb-hugo-humans) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-humans) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-humans#configuration) in your configuration.
 
 ### Stylesheets
 
@@ -124,7 +134,7 @@ If you are using [`dnb-hugo-social`](https://github.com/dnb-org/dnb-hugo-social)
 
 ### Open Search
 
-If you are using [`dnb-hugo-opensearch`](https://github.com/dnb-org/dnb-hugo-opensearch) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. Don't forget to [configure the module](https://github.com/dnb-org/dnb-hugo-opensearch#configuration) in your configuration.
+If you are using [`dnb-hugo-opensearch`](https://github.com/dnb-org/dnb-hugo-opensearch) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-opensearch#configuration) in your configuration.
 
 ### PWA
 
