@@ -42,7 +42,7 @@ Then add this module to your required modules in config.toml.
 [module]
 
 [[module.imports]]
-path = " $MODULENAME$"
+path = "github.com/dnb-org/dnb-hugo-head"
 
 ```
 
@@ -52,24 +52,13 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ```shell
 # update this module
-hugo mod get -u $REPONAME$
+hugo mod get -u github.com/dnb-org/dnb-hugo-head
 # update all modules
-hugo mod get -u #
+hugo mod get -u ./...
 ```
-
 <!--- INSTALLUPDATE END --->
 
 ## Configuration parameters
-
-- All configuration is located in the params section below `params.dnb.head`.
-- All samples in this document are documented in TOML and assume the section header is already present above them.
-
-```toml
-[params]
-[params.dnb]
-[params.dnb.head]
-parameter = value
-```
 
 ### General setup
 
@@ -109,7 +98,6 @@ The author tags generation is quite small still, but expect larger changes in th
 name = "name"
 email = "email"
 homepage = "website"
-
 ```
 
 If you are using [`dnb-hugo-humans`](https://github.com/dnb-org/dnb-hugo-humans) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-humans) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-humans#configuration) in your configuration.
@@ -156,7 +144,6 @@ bing = ""
 alexa = ""
 pinterest = ""
 norton = ""
-
 ```
 
 **Note: If you can then use verification via a file in your site root or via DNS record to minimise the output on your pages. The less headers you have the better.**
@@ -178,10 +165,7 @@ latitude = ""
 longitude = ""
 region = ""
 placename = ""
-
 ```
-
-- [ ] TODO more explicit description of these tags
 
 ## Hooks
 
@@ -206,10 +190,12 @@ placename = ""
 | [dnb-hugo-auditor](https://github.com/dnb-org/dnb-hugo-auditor) | |
 | [dnb-hugo-debug](https://github.com/dnb-org/dnb-hugo-debug) :mage_man: | |
 | [dnb-hugo-errors](https://github.com/dnb-org/dnb-hugo-errors) | |
+| [dnb-hugo-feeds](https://github.com/dnb-org/dnb-hugo-feeds) | Implements various configurable feed formats. |
 | [dnb-hugo-functions](https://github.com/dnb-org/dnb-hugo-functions) | |
 | [dnb-hugo-giscus](https://github.com/dnb-org/dnb-hugo-giscus) | The Giscus comment system layout for GoHugo. |
 | [dnb-hugo-head](https://github.com/dnb-org/dnb-hugo-head) | A GoHugo theme component that solves the old question of "What tags belong into the `<head>` tag of my website?" |
 | [dnb-hugo-hooks](https://github.com/dnb-org/dnb-hugo-hooks) | GoHugo's missing hook system for template extensions. |
+| [dnb-hugo-humans](https://github.com/dnb-org/dnb-hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
 | [dnb-hugo-internals](https://github.com/dnb-org/dnb-hugo-internals) | Better internal templates for GoHugo |
 | [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimize your site on Netlify |
 | [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch) | configuration for Open Search |
@@ -222,6 +208,7 @@ placename = ""
 | [dnb-hugo-security](https://github.com/dnb-org/dnb-hugo-security) | |
 | [dnb-hugo-sitemap](https://github.com/dnb-org/dnb-hugo-sitemap) | |
 | [dnb-hugo-social](https://github.com/dnb-org/dnb-hugo-social) | |
+| [dnb-hugo-youtube](https://github.com/dnb-org/dnb-hugo-youtube) | A shortcode and partial for lite youtube embeds. |
 
 <!--lint disable no-missing-blank-lines -->
 <!--- COMPONENTS END --->
