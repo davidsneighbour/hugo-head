@@ -1,14 +1,25 @@
-{{ if .IsHome }}
-  <title>{{ site.Title }}</title>
-{{ else }}
-  <title>
-    {{- .Title -}}
-    {{- if .IsNode }}
-      {{ if gt .Paginator.PageNumber 1 }}
-        (Page {{ .Paginator.PageNumber }})
-      {{ end }}
-    {{ end -}}
-    {{- site.Params.dnb.head.separator | default " | " -}}
-    {{- site.Title -}}
-  </title>
-{{ end }}
+{{- $title := "" -}}
+{{- $separator := site.Params.dnb.head.separator | default " | " -}}
+{{- $sitetitle := false -}}
+
+{{- if ne .Title site.Title -}}
+  {{- $sitetitle = true -}}
+{{- end -}}
+
+{{- if .IsHome -}}
+  {{- $title = site.Title -}}
+{{- else -}}
+  {{- $title = .Title -}}
+{{- end -}}
+
+{{- if .IsNode -}}
+  {{- if gt .Paginator.PageNumber 1 -}}
+    {{- $title = printf "%s (Page %d)" $title .Paginator.PageNumber -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $sitetitle true -}}
+  {{- $title = printf "%s %s %s" $title $separator site.Title -}}
+{{- end -}}
+
+<title>{{- $title -}}</title>

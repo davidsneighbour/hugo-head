@@ -79,14 +79,18 @@ parameter = value
 [dnb.head]
 charset = "utf-8"
 viewport = "width=device-width, initial-scale=1"
-
 ```
 
 It also uses the `baseURL`-parameter of the global configuration object for the `base`-tag.
 
 ### `title` generation
 
-To be written.
+The title will be generated from the title frontmatter of the content file. If we are on the home page the site title is used. On subsequent listpages a `(Page n)` is added. On all pages except the homepage a separator and the sites title is added at the end.
+
+```toml
+[dnb.head]
+separator = " | "
+```
 
 ### Speed optimisation
 
@@ -94,7 +98,7 @@ To be written.
 
 ### `description` generation
 
-To be written.
+The description is generated from the description frontmatter of the content file. If no description is configured then `site.Params.description` is used.
 
 ### Author generation
 

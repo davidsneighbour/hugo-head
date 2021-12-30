@@ -1,8 +1,9 @@
-{{- /* TODO outsource description creation */ -}}
-<meta name="description" content="{{- with .Params.description -}}
-  {{- . -}}
+{{- $description := "" -}}
+{{- with .Params.description -}}
+  {{- $description = . -}}
 {{- else -}}
   {{- with site.Params.description -}}
-    {{- . -}}
+    {{- $description = . -}}
   {{- end -}}
-{{- end -}}">
+{{- end -}}
+<meta name="description" content="{{- $description -}}">
