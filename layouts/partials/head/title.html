@@ -13,8 +13,11 @@
 {{- end -}}
 
 {{- if .IsNode -}}
-  {{- if gt .Paginator.PageNumber 1 -}}
-    {{- $title = printf "%s (Page %d)" $title .Paginator.PageNumber -}}
+  {{- $paginator := .Scratch.Get "paginator" -}}
+  {{- with $paginator -}}
+    {{- if gt .PageNumber 1 -}}
+      {{- $title = printf "%s (Page %d)" $title .PageNumber -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 

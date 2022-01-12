@@ -81,6 +81,18 @@ The title will be generated from the title frontmatter of the content file. If w
 separator = " | "
 ```
 
+The title generation is able to add a "(page n)" to the title on list pages if you save your pagination dictionary in a scratch called `paginator`. The following would be a sample of how to accomplish that:
+
+```gotemplate
+{{- $paginator := dict -}}
+{{- if eq "home" .Kind -}}
+  {{- $paginator = $.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+{{- else if .IsNode -}}
+  {{- $paginator = $.Paginator -}}
+{{- end -}}
+{{- .Scratch.Set "paginator" $paginator -}}
+```
+
 ### Speed optimisation
 
 To be written.
@@ -197,7 +209,7 @@ placename = ""
 | [dnb-hugo-hooks](https://github.com/dnb-org/dnb-hugo-hooks) | GoHugo's missing hook system for template extensions. |
 | [dnb-hugo-humans](https://github.com/dnb-org/dnb-hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
 | [dnb-hugo-internals](https://github.com/dnb-org/dnb-hugo-internals) | Better internal templates for GoHugo |
-| [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimize your site on Netlify |
+| [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimise your site on Netlify |
 | [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch) | configuration for Open Search |
 | [dnb-hugo-pictures](https://github.com/dnb-org/dnb-hugo-pictures) | |
 | [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa) | Automatically turns your site into a PWA |
