@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.9...v0.0.10) (2022-01-12)
+
+
+### Chore
+
+* **config:** update release script calls ([3fe0528](https://github.com/dnb-org/dnb-hugo-head/commit/3fe0528fd1a804c51d5dac17996b9d38764d3521))
+
 ### [0.0.9](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.5...v0.0.9) (2022-01-12)
 
 
