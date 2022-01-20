@@ -19,6 +19,7 @@ if test -f "$FILE"; then
   sed -i "s/version: .*/version: ${VERSION}/" $FILE
   DATE=$(date +%F)
   sed -i "s/date-released: .*/date-released: ${DATE}/" $FILE
+  git add $FILE
 fi
 
 git add data/dnb/build/
