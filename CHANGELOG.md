@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.11...v0.0.12) (2022-01-20)
+
+
+### Build System
+
+* **fix:** add changed CITATION.cff ([d80230d](https://github.com/dnb-org/dnb-hugo-head/commit/d80230d08ea309b5728fdf5b76c7b5d7b7e61d82))
+
 ### [0.0.11](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.10...v0.0.11) (2022-01-20)
 
 
