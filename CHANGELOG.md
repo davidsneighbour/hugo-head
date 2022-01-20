@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.10...v0.0.11) (2022-01-20)
+
+
+### Chore
+
+* **deps:** update dependencies ([f9b20d4](https://github.com/dnb-org/dnb-hugo-head/commit/f9b20d47b5a1d206c9c596de96417c6fc1a51aca))
+
+
+### Build System
+
+* fix file structure for build scripts ([1bb3972](https://github.com/dnb-org/dnb-hugo-head/commit/1bb3972536178c6efbd5e4e8c972bde6d03bfeed))
+* update post release hook to update CITATION.cff ([e680acc](https://github.com/dnb-org/dnb-hugo-head/commit/e680accf2d872b153d906d0161efbc7c4f782689))
+
 ### [0.0.10](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.9...v0.0.10) (2022-01-12)
 
 
