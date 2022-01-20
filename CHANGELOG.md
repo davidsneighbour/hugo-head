@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.12...v0.0.13) (2022-01-20)
+
+
+### Chore
+
+* **fix:** update hook script path in package.json ([68c1800](https://github.com/dnb-org/dnb-hugo-head/commit/68c18007bdedb05c9f02b7cbc35bf0dad080245a))
+
 ### [0.0.12](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.11...v0.0.12) (2022-01-20)
 
 
