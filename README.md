@@ -50,7 +50,7 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ## Updating
 
-```shell
+```bash
 # update this module
 hugo mod get -u github.com/dnb-org/dnb-hugo-head
 # update all modules
@@ -83,7 +83,7 @@ separator = " | "
 
 The title generation is able to add a "(page n)" to the title on list pages if you save your pagination dictionary in a scratch called `paginator`. The following would be a sample of how to accomplish that:
 
-```gotemplate
+```golang
 {{- $paginator := dict -}}
 {{- if eq "home" .Kind -}}
   {{- $paginator = $.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
