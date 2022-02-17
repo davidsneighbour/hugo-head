@@ -1,6 +1,9 @@
-{{- with .AlternativeOutputFormats }}
-{{- range . -}}
-<link rel="{{- .Rel -}}" type="{{- .MediaType.Type -}}" href="{{- .Permalink | safeURL -}}"
-      {{ with .Title }}title="{{- . -}}" {{ end }} hreflang="{{- site.LanguageCode -}}">
-{{ end -}}
+{{- with site.Home.AlternativeOutputFormats -}}
+  {{- range . -}}
+  <link
+    rel="{{- .Rel -}}"
+    type="{{- .MediaType.Type -}}"
+    href="{{- .Permalink | safeURL -}}"
+    hreflang="{{- site.LanguageCode -}}">
+  {{- end -}}
 {{- end -}}

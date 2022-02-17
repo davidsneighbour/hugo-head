@@ -20,6 +20,6 @@
   {{- end -}}
 {{- end -}}
 {{- partialCached "head/verification.html" . -}}
-{{- partialCached "head/alternates.html" . -}}
+{{- partialCached "head/alternates.html" . "sitefeeds" -}}
 {{- partial "head/others.html" . -}}
 {{- partial "func/hook.html" ( dict "hook" "head-end" "context" . ) -}}
