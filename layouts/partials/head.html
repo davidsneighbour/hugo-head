@@ -1,3 +1,4 @@
+{{- $page := . -}}
 {{- partial "func/hook.html" ( dict "hook" "head-init" "context" . ) -}}
 <meta charset="{{- site.Params.dnb.head.charset | default "utf-8" -}}">
 <meta name="viewport" content="{{- site.Params.dnb.head.viewport | default "width=device-width, initial-scale=1" -}}">
@@ -16,7 +17,7 @@
 {{- $paths := slice "head/social.html" "head/opensearch.html" "head/pwa.html" "head/humans.txt" -}}
 {{- range $paths -}}
   {{- if templates.Exists ( printf "partials/%s" . ) -}}
-    {{- partialCached . . -}}
+    {{- partialCached . $page $page -}}
   {{- end -}}
 {{- end -}}
 {{- partialCached "head/verification.html" . -}}
