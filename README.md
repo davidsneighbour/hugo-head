@@ -116,7 +116,12 @@ If you are using [`dnb-hugo-humans`](https://github.com/dnb-org/dnb-hugo-humans)
 
 ### Stylesheets
 
-To be written.
+`dnb-hugo-head` adds a simple stylesheet pipeline to your website. It expects a SCSS entry point in `assets/scss/style.scss` or any other configured entry point.
+
+```toml
+[dnb.head.styles]
+entrypoint = "scss/theme.scss"
+```
 
 ### Translations
 
