@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# check if all requirements are met
-REQUIRED_TOOLS=(git sed node)
+REQUIRED_TOOLS=(
+  git
+)
+
 for TOOL in "${REQUIRED_TOOLS[@]}"; do
   if ! command -v "${TOOL}" >/dev/null; then
     echo "${TOOL} is required... "
@@ -9,20 +11,10 @@ for TOOL in "${REQUIRED_TOOLS[@]}"; do
   fi
 done
 
-# update version in citation configuration
-FILE=CITATION.cff
-if test -f "$FILE"; then
-  VERSION=$(node -pe 'require("./package.json")["version"]')
-  sed -i "s/^version: .*/version: ${VERSION}/" $FILE
-  DATE=$(date +%F)
-  sed -i "s/date-released: .*/date-released: ${DATE}/" $FILE
-  git add $FILE
-fi
+# adding data directory for new build information
+git add data/dnb
+git commit --signoff --amend --no-edit
 
-# add re-versioned files to recent edit
-git add data/dnb/head/
-git commit --amend --no-edit
-
-# push everything up
-git push --follow-tags origin main
-git push --tags
+# push release to GitHub
+git push origin main --follow-tags
+git push origin --tags
