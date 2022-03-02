@@ -42,7 +42,7 @@ Then add this module to your required modules in config.toml.
 [module]
 
 [[module.imports]]
-path = "github.com/dnb-org/dnb-hugo-debug"
+path = "github.com/dnb-org/dnb-hugo-head"
 
 ```
 
@@ -52,9 +52,9 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ```shell
 # update this module
-hugo mod get -u github.com/dnb-org/dnb-hugo-debug
+hugo mod get -u github.com/dnb-org/dnb-hugo-head
 # update to a specific version
-hugo mod get -u github.com/dnb-org/dnb-hugo-debug@v1.0.0
+hugo mod get -u github.com/dnb-org/dnb-hugo-head@v1.0.0
 # update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
