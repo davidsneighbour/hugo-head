@@ -152,7 +152,7 @@ If you are using [`dnb-hugo-pwa`](https://github.com/dnb-org/dnb-hugo-pwa) then 
 `dnb-hugo-head` can add verification-meta-tag to your header for any of the following services. Just add the value of the meta-tag to your configuration.
 
 ```toml
-[params.dnb.head.verification]
+[dnb.head.verification]
 google = ""
 yandex = ""
 bing = ""
