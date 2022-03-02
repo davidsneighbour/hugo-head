@@ -13,7 +13,7 @@
 {{- partial "func/hook.html" ( dict "hook" "head-post-css" "context" . ) -}}
 {{- partial "head/translations.html" . -}}
 {{- partial "head/seo.html" . -}}
-{{- partial "head/series.html" . -}}
+{{- partialCached "head/series.html" . . -}}
 {{- $paths := slice "head/social.html" "head/opensearch.html" "head/pwa.html" "head/humans.txt" -}}
 {{- range $paths -}}
   {{- if templates.Exists ( printf "partials/%s" . ) -}}
