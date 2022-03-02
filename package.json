@@ -7,10 +7,6 @@
   "homepage": "https://github.com/dnb-org/dnb-hugo-head#readme",
   "repository": "dnb-org/dnb-hugo-head",
   "bugs": "https://github.com/dnb-org/dnb-hugo-head/issues",
-  "dependencies": {
-    "mem": "^9.0.2",
-    "trim": "^1.0.1"
-  },
   "devDependencies": {
     "@dnb-org/standard-version-config": "^3.5.6",
     "@dnb-org/tools": "^3.5.6"
