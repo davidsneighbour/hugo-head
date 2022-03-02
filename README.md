@@ -128,11 +128,9 @@ To be written.
 
 ### Series
 
-To be written.
+If the current page has a page following or coming before then dnb-hugo-head will automatically create links to those pages in the header. It uses the `.PrevInSection`/`.NextInSection` links for this.
 
 ### Social Graph
-
-**Note:** This plugin is not ready for prime time yet.
 
 If you are using [`dnb-hugo-social`](https://github.com/dnb-org/dnb-hugo-social) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-social) automatically for you.
 
@@ -158,7 +156,7 @@ pinterest = ""
 norton = ""
 ```
 
-**Note: If you can then use verification via a file in your site root or via DNS record to minimise the output on your pages. The less headers you have the better.**
+**Note: You should prefer to verify your ownership via a file in your site root or via DNS record to minimise the output on your pages. The less headers you have the better.**
 
 ### Alternates
 
@@ -191,6 +189,10 @@ placename = ""
 | head-pre-css | Hooks in before the stylesheets are printed. |
 | head-post-css | Hooks in after the stylesheets are printed. |
 | head-end | Hooks in at the end of the `head` right before the closing tag. |
+
+## Sites and Projects using `dnb-hugo-head`
+
+- [Kollitsch.de](https://kollitsch.de)
 
 <!--- COMPONENTS BEGIN --->
 
