@@ -1,11 +1,6 @@
-{{/* <!-- Helps prevent duplicate content issues -->
-
-
-<!-- Control the behaviour of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
-
-<!-- Tells Google not to show the sitelinks search box -->
-<meta name="google" content="nositelinkssearchbox"> */}}
-
+{{- with .Params.robots -}}
+  <meta name="robots" content="{{ . }}">
+{{- else -}}
+  <meta name="robots" content="index,follow">
+{{- end -}}
 <link rel="canonical" href="{{ .Permalink }}">
