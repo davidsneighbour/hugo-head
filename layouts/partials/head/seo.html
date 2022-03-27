@@ -1,5 +1,5 @@
 {{/* <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="https://example.com/article/?page=2">
+
 
 <!-- Control the behaviour of search engine crawling and indexing -->
 <meta name="robots" content="index,follow"><!-- All Search Engines -->
@@ -7,3 +7,5 @@
 
 <!-- Tells Google not to show the sitelinks search box -->
 <meta name="google" content="nositelinkssearchbox"> */}}
+
+<link rel="canonical" href="{{ .Permalink }}">

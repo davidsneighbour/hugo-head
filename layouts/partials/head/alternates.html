@@ -2,8 +2,10 @@
   {{- range . -}}
   <link
     rel="{{- .Rel -}}"
-    type="{{- .MediaType.Type -}}"
+    type="{{- .MediaType.Type | safeHTMLAttr -}}"
     href="{{- .Permalink | safeURL -}}"
-    hreflang="{{- site.LanguageCode -}}">
+
+    {{/* hreflang="{{- site.LanguageCode -}}" */}}
+    >
   {{- end -}}
 {{- end -}}
