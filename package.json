@@ -1,6 +1,6 @@
 {
   "name": "dnb-hugo-head",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "description": "DNB's answer to the question 'What tags belong into the <head> tag of my website?'",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com> (https://davids-neighbour.com)",
