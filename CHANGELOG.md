@@ -2,6 +2,69 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.12...v1.0.7) (2022-04-06)
+
+
+### Features
+
+* add prev/next links to header ([e7e8fc6](https://github.com/dnb-org/dnb-hugo-head/commit/e7e8fc6ab3a445a4623a6da8c888c1e1ebab8747))
+* add robots tag ([4459e26](https://github.com/dnb-org/dnb-hugo-head/commit/4459e26f58a60af53608ab40f7815dd7fda2adea))
+* make style entry point configurable and document ([7238df8](https://github.com/dnb-org/dnb-hugo-head/commit/7238df858d2b229b792322486ba3035e83b77c5b)), closes [#45](https://github.com/dnb-org/dnb-hugo-head/issues/45)
+
+
+### Bug Fixes
+
+* fix postcss and postprocessing calls in the stylesheet setup ([efb5545](https://github.com/dnb-org/dnb-hugo-head/commit/efb5545d12bc7c846860437942c59860d836476f))
+* proper highlighting langauge markers ([688aff0](https://github.com/dnb-org/dnb-hugo-head/commit/688aff0bbcd812f02a57fbb7fcd375f5aa888a45))
+* proper inclusion of header partials ([033923a](https://github.com/dnb-org/dnb-hugo-head/commit/033923afa45d74209bb0027db34125fe44c9b00a))
+* proper site wide feed links ([5ba9a51](https://github.com/dnb-org/dnb-hugo-head/commit/5ba9a51cc7b048e81b58ceffd2e79527f52f0896))
+* remove language from rss feed, add canonical link ([f030f36](https://github.com/dnb-org/dnb-hugo-head/commit/f030f360c3d96bdce04b561e4f24302c8d08befb))
+* remove overzealous new lines, cleanup ([8492f2d](https://github.com/dnb-org/dnb-hugo-head/commit/8492f2d9a3e82af2e4556ade8d35a05d5b714727))
+* require hooks module ([180533e](https://github.com/dnb-org/dnb-hugo-head/commit/180533e61b33b937e449ed08b2dc50f2e3fb0260))
+
+
+### Documentation
+
+* **fix:** remove  from sample config ([edf89cd](https://github.com/dnb-org/dnb-hugo-head/commit/edf89cd219a54dc2f7759dcf685e72c8bd711def))
+* update README.md with info about series ([63acfce](https://github.com/dnb-org/dnb-hugo-head/commit/63acfceaba0c9809eb77d2463424a9e7ea409263)), closes [#48](https://github.com/dnb-org/dnb-hugo-head/issues/48)
+
+
+### Build System
+
+* fix build setup ([87bec65](https://github.com/dnb-org/dnb-hugo-head/commit/87bec655749a36c1518ac76cf4f53de9b6e797e0))
+* **fix:** cff-version should not be replaced by release script ([a4eb83a](https://github.com/dnb-org/dnb-hugo-head/commit/a4eb83a18c2402539e934829c2682502b3b6ac11))
+* **fix:** cleanup and fix some issues of hook scripts ([fd815ec](https://github.com/dnb-org/dnb-hugo-head/commit/fd815ece88a9db9a36632f18cce95e63a9f48b45))
+* **fix:** readd citation file update to postrelease hook ([675bd09](https://github.com/dnb-org/dnb-hugo-head/commit/675bd097d792c7952905d3bea30b99d9ec7364ff))
+* update build system ([d5c07a3](https://github.com/dnb-org/dnb-hugo-head/commit/d5c07a3ebafec65bf04bec8da3b9902ac0db2a97))
+* update build system, remove cruft ([a3fd631](https://github.com/dnb-org/dnb-hugo-head/commit/a3fd631a15b289cf905340b5b424571ce0d6600b)), closes [#50](https://github.com/dnb-org/dnb-hugo-head/issues/50)
+
+
+### Chore
+
+* **config:** update header images ([4592d70](https://github.com/dnb-org/dnb-hugo-head/commit/4592d70ad5b70e9c598be5636d75cfcbefc76c78))
+* **deps:** update dependencies ([e70ff1b](https://github.com/dnb-org/dnb-hugo-head/commit/e70ff1bbc5a286542b140f18dacb6a9e41ca7888))
+* **deps:** update dependencies ([ddef2d8](https://github.com/dnb-org/dnb-hugo-head/commit/ddef2d8de480eebea1bf1e8deac2954efadc104b))
+* **deps:** update dependencies ([eaffe07](https://github.com/dnb-org/dnb-hugo-head/commit/eaffe0706eda966ab0d9570c33d096c9b3df548e))
+* **deps:** update dependencies, remove dependabot dependencies ([3e6ee37](https://github.com/dnb-org/dnb-hugo-head/commit/3e6ee372f1589f8ce8dbf4fc865f45edcdc3359c))
+* **fix:** update hook script path in package.json ([68c1800](https://github.com/dnb-org/dnb-hugo-head/commit/68c18007bdedb05c9f02b7cbc35bf0dad080245a))
+* **release:** v0.0.13 ([58aa47b](https://github.com/dnb-org/dnb-hugo-head/commit/58aa47b5f6870eadaca1533e1fac8c83ecffd733))
+* **release:** v0.0.14 ([1f86943](https://github.com/dnb-org/dnb-hugo-head/commit/1f869439fb59319c64fd391c18ab1f404bfa4e6a))
+* **release:** v0.0.15 ([408f7d1](https://github.com/dnb-org/dnb-hugo-head/commit/408f7d10cddecbc0821ff7830223d9cad4782cc9))
+* **release:** v0.0.16 ([e169ac1](https://github.com/dnb-org/dnb-hugo-head/commit/e169ac128d6d813dc5591cd1ce7d8cf1e1c9fdf7))
+* **release:** v0.0.17 ([ba92e5e](https://github.com/dnb-org/dnb-hugo-head/commit/ba92e5e90efee1c92ebcd6f09080941078cb846d))
+* **release:** v0.0.18 ([f8ac15e](https://github.com/dnb-org/dnb-hugo-head/commit/f8ac15ead1a58e4734770be2498aa1e68e82c578))
+* **release:** v0.0.19 ([8935345](https://github.com/dnb-org/dnb-hugo-head/commit/893534566ba05d1a964b513e5ff84fd7983f67c3))
+* **release:** v0.0.20 ([7a0d501](https://github.com/dnb-org/dnb-hugo-head/commit/7a0d50119f39a8a1dceabdbdb3258056b5f6d0ac))
+* **release:** v0.0.21 ([2e380a9](https://github.com/dnb-org/dnb-hugo-head/commit/2e380a9d54ec7ba5e8c84d23abc355159812f3fe))
+* **release:** v1.0.0 ([f2aeabb](https://github.com/dnb-org/dnb-hugo-head/commit/f2aeabb660bba4eef3c6f3fc2fc0006c678a3916))
+* **release:** v1.0.1 ([d639ddd](https://github.com/dnb-org/dnb-hugo-head/commit/d639ddd82e95c2a94b14aa4280496250e13b5df0))
+* **release:** v1.0.2 ([cf77af3](https://github.com/dnb-org/dnb-hugo-head/commit/cf77af34e0770b2fe69a9624c657f1ce74cb0a22))
+* **release:** v1.0.3 ([137b015](https://github.com/dnb-org/dnb-hugo-head/commit/137b015ea0ee982e10cd9830e0e3c9f2520d6a22))
+* **release:** v1.0.4 ([4b43742](https://github.com/dnb-org/dnb-hugo-head/commit/4b437427ef1589483c1f63c8a38a2a0b102bf9f6))
+* **release:** v1.0.5 ([ecd1230](https://github.com/dnb-org/dnb-hugo-head/commit/ecd123062d2457bf35c052debe93dcc584c3f801))
+* **release:** v1.0.6 ([63d74c8](https://github.com/dnb-org/dnb-hugo-head/commit/63d74c8586a8bfb67633b96d258ef00091d243b4))
+* update go.mod ([5936498](https://github.com/dnb-org/dnb-hugo-head/commit/593649835a9e8c892b0289aee37f774b10c94b39))
+
 ### [1.0.6](https://github.com/dnb-org/dnb-hugo-head/compare/v0.0.12...v1.0.6) (2022-03-31)
 
 
