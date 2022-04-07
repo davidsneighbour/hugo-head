@@ -42,7 +42,7 @@ Then add this module to your required modules in `config.toml`.
 [module]
 
 [[module.imports]]
-path = "github.com/dnb-org/dnb-hugo-head"
+path = "github.com/davidsneighbour/hugo-head"
 disable = false
 ignoreConfig = false
 ignoreImports = false
@@ -55,9 +55,9 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ```bash
 # update this module
-hugo mod get -u github.com/dnb-org/dnb-hugo-head
+hugo mod get -u github.com/davidsneighbour/hugo-head
 # update to a specific version
-hugo mod get -u github.com/dnb-org/dnb-hugo-head@v1.0.0
+hugo mod get -u github.com/davidsneighbour/hugo-head@v1.0.0
 # update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
@@ -117,8 +117,8 @@ email = "email"
 homepage = "website"
 ```
 
-If you are using [`dnb-hugo-humans`](https://github.com/dnb-org/dnb-hugo-humans) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-humans) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-humans#configuration) in your configuration.
-If you are using [`dnb-hugo-publisher`](https://github.com/dnb-org/dnb-hugo-publisher) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-publisher) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-publisher#configuration) in your configuration.
+If you are using [`dnb-hugo-humans`](https://github.com/davidsneighbour/hugo-humans) then it will integrate the [required header tags](https://github.com/davidsneighbour/hugo-humans) automatically for you. Don't forget to individually [configure the module](https://github.com/davidsneighbour/hugo-humans#configuration) in your configuration.
+If you are using [`dnb-hugo-publisher`](https://github.com/davidsneighbour/hugo-publisher) then it will integrate the [required header tags](https://github.com/davidsneighbour/hugo-publisher) automatically for you. Don't forget to individually [configure the module](https://github.com/davidsneighbour/hugo-publisher#configuration) in your configuration.
 
 ### Stylesheets
 
@@ -143,15 +143,15 @@ If the current page has a page following or coming before then dnb-hugo-head wil
 
 ### Social Graph
 
-If you are using [`dnb-hugo-social`](https://github.com/dnb-org/dnb-hugo-social) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-social) automatically for you.
+If you are using [`dnb-hugo-social`](https://github.com/davidsneighbour/hugo-social) then it will integrate the [required header tags](https://github.com/davidsneighbour/hugo-social) automatically for you.
 
 ### Open Search
 
-If you are using [`dnb-hugo-opensearch`](https://github.com/dnb-org/dnb-hugo-opensearch) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. Don't forget to individually [configure the module](https://github.com/dnb-org/dnb-hugo-opensearch#configuration) in your configuration.
+If you are using [`dnb-hugo-opensearch`](https://github.com/davidsneighbour/hugo-opensearch) then it will integrate the [required header tags](https://github.com/davidsneighbour/hugo-pwa#setup-layouts) automatically for you. Don't forget to individually [configure the module](https://github.com/davidsneighbour/hugo-opensearch#configuration) in your configuration.
 
 ### PWA
 
-If you are using [`dnb-hugo-pwa`](https://github.com/dnb-org/dnb-hugo-pwa) then it will integrate the [required header tags](https://github.com/dnb-org/dnb-hugo-pwa#setup-layouts) automatically for you. **Note**, that it does NOT include anything in the footer, so these tags still need to be added in your own templates.
+If you are using [`dnb-hugo-pwa`](https://github.com/davidsneighbour/hugo-pwa) then it will integrate the [required header tags](https://github.com/davidsneighbour/hugo-pwa#setup-layouts) automatically for you. **Note**, that it does NOT include anything in the footer, so these tags still need to be added in your own templates.
 
 ### Verification
 
@@ -190,7 +190,7 @@ placename = ""
 
 ## Hooks
 
-`dnb-hugo-head` implements template hooks via [`dnb-hugo-hooks`](https://github.com/dnb-org/dnb-hugo-hooks) and makes the following hooks available:
+`dnb-hugo-head` implements template hooks via [`dnb-hugo-hooks`](https://github.com/davidsneighbour/hugo-hooks) and makes the following hooks available:
 
 <!-- prettier-ignore -->
 | Hook | Description |
@@ -212,30 +212,30 @@ placename = ""
 <!-- prettier-ignore -->
 | Component | Description |
 | :--- | :--- |
-| [dnb-hugo-auditor](https://github.com/dnb-org/dnb-hugo-auditor) | |
-| [dnb-hugo-debug](https://github.com/dnb-org/dnb-hugo-debug) :mage_man: | Debug EVERYTHING in GoHugo. |
-| [dnb-hugo-errors](https://github.com/dnb-org/dnb-hugo-errors) | A Hugo module that adds more versatile error pages to a site. |
-| [dnb-hugo-feeds](https://github.com/dnb-org/dnb-hugo-feeds) | Implements various configurable feed formats. |
-| [dnb-hugo-functions](https://github.com/dnb-org/dnb-hugo-functions) | A Hugo theme component with helper functions for other projects. |
-| [dnb-hugo-giscus](https://github.com/dnb-org/dnb-hugo-giscus) | The Giscus comment system layout for GoHugo. |
-| [dnb-hugo-head](https://github.com/dnb-org/dnb-hugo-head) | A GoHugo theme component that solves the old question of "What tags belong into the `<head>` tag of my website?" |
-| [dnb-hugo-hooks](https://github.com/dnb-org/dnb-hugo-hooks) | Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.  |
-| [dnb-hugo-humans](https://github.com/dnb-org/dnb-hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
-| [dnb-hugo-icons](https://github.com/dnb-org/dnb-hugo-icons) | Icons for your Hugo website. |
-| [dnb-hugo-internals](https://github.com/dnb-org/dnb-hugo-internals) | Better internal templates for GoHugo |
-| [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimize your site on Netlify |
-| [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch) | configuration for Open Search |
-| [dnb-hugo-pictures](https://github.com/dnb-org/dnb-hugo-pictures) | |
-| [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa) | Automatically turns your site into a PWA |
-| [dnb-hugo-renderhooks](https://github.com/dnb-org/dnb-hugo-renderhooks) | render hooks for Markdown markup |
-| [dnb-hugo-robots](https://github.com/dnb-org/dnb-hugo-robots) | Add a customizable robots.txt to your website. |
-| [dnb-hugo-schema](https://github.com/dnb-org/dnb-hugo-schema) | |
-| [dnb-hugo-search-algolia](https://github.com/dnb-org/dnb-hugo-search-algolia) | |
-| [dnb-hugo-security](https://github.com/dnb-org/dnb-hugo-security) | Add a security.txt to your site with information about your preferred procedures to notify the developer team about security issues. |
-| [dnb-hugo-sitemap](https://github.com/dnb-org/dnb-hugo-sitemap) | |
-| [dnb-hugo-social](https://github.com/dnb-org/dnb-hugo-social) | |
-| [dnb-hugo-workflows](https://github.com/dnb-org/dnb-hugo-workflows) | A collection of Github Actions/Workflows to optimise your work with GoHugo. |
-| [dnb-hugo-youtube](https://github.com/dnb-org/dnb-hugo-youtube) | A shortcode and partial for lite and speedy youtube embeds. |
+| [dnb-hugo-auditor](https://github.com/davidsneighbour/hugo-auditor) | |
+| [dnb-hugo-debug](https://github.com/davidsneighbour/hugo-debug) :mage_man: | Debug EVERYTHING in GoHugo. |
+| [dnb-hugo-errors](https://github.com/davidsneighbour/hugo-errors) | A Hugo module that adds more versatile error pages to a site. |
+| [dnb-hugo-feeds](https://github.com/davidsneighbour/hugo-feeds) | Implements various configurable feed formats. |
+| [dnb-hugo-functions](https://github.com/davidsneighbour/hugo-functions) | A Hugo theme component with helper functions for other projects. |
+| [dnb-hugo-giscus](https://github.com/davidsneighbour/hugo-giscus) | The Giscus comment system layout for GoHugo. |
+| [dnb-hugo-head](https://github.com/davidsneighbour/hugo-head) | A GoHugo theme component that solves the old question of "What tags belong into the `<head>` tag of my website?" |
+| [dnb-hugo-hooks](https://github.com/davidsneighbour/hugo-hooks) | Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.  |
+| [dnb-hugo-humans](https://github.com/davidsneighbour/hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
+| [dnb-hugo-icons](https://github.com/davidsneighbour/hugo-icons) | Icons for your Hugo website. |
+| [dnb-hugo-internals](https://github.com/davidsneighbour/hugo-internals) | Better internal templates for GoHugo |
+| [dnb-hugo-netlification](https://github.com/davidsneighbour/hugo-netlification) | a collection of tools that optimize your site on Netlify |
+| [dnb-hugo-opensearch](https://github.com/davidsneighbour/hugo-opensearch) | configuration for Open Search |
+| [dnb-hugo-pictures](https://github.com/davidsneighbour/hugo-pictures) | |
+| [dnb-hugo-pwa](https://github.com/davidsneighbour/hugo-pwa) | Automatically turns your site into a PWA |
+| [dnb-hugo-renderhooks](https://github.com/davidsneighbour/hugo-renderhooks) | render hooks for Markdown markup |
+| [dnb-hugo-robots](https://github.com/davidsneighbour/hugo-robots) | Add a customizable robots.txt to your website. |
+| [dnb-hugo-schema](https://github.com/davidsneighbour/hugo-schema) | |
+| [dnb-hugo-search-algolia](https://github.com/davidsneighbour/hugo-search-algolia) | |
+| [dnb-hugo-security](https://github.com/davidsneighbour/hugo-security) | Add a security.txt to your site with information about your preferred procedures to notify the developer team about security issues. |
+| [dnb-hugo-sitemap](https://github.com/davidsneighbour/hugo-sitemap) | |
+| [dnb-hugo-social](https://github.com/davidsneighbour/hugo-social) | |
+| [dnb-hugo-workflows](https://github.com/davidsneighbour/hugo-workflows) | A collection of Github Actions/Workflows to optimise your work with GoHugo. |
+| [dnb-hugo-youtube](https://github.com/davidsneighbour/hugo-youtube) | A shortcode and partial for lite and speedy youtube embeds. |
 
 <!--lint disable no-missing-blank-lines -->
 <!--- COMPONENTS END --->

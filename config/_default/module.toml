@@ -14,4 +14,4 @@ target = "data"
 disable = false
 ignoreConfig = false
 ignoreImports = false
-path = "github.com/dnb-org/dnb-hugo-hooks"
+path = "github.com/davidsneighbour/hugo-hooks"

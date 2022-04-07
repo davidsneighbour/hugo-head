@@ -4,9 +4,9 @@
   "license": "MIT",
   "description": "DNB's answer to the question 'What tags belong into the <head> tag of my website?'",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com> (https://davids-neighbour.com)",
-  "homepage": "https://github.com/dnb-org/dnb-hugo-head#readme",
-  "repository": "dnb-org/dnb-hugo-head",
-  "bugs": "https://github.com/dnb-org/dnb-hugo-head/issues",
+  "homepage": "https://github.com/davidsneighbour/hugo-head#readme",
+  "repository": "davidsneighbour/hugo-head",
+  "bugs": "https://github.com/davidsneighbour/hugo-head/issues",
   "devDependencies": {
     "@dnb-org/standard-version-config": "^3.5.9",
     "@dnb-org/tools": "^3.5.9"
