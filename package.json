@@ -1,6 +1,6 @@
 {
   "name": "hugo-head",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "license": "MIT",
   "description": "David's Neighbour answer to the question 'What tags belong into the <head> tag of my website?'",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com> (https://davids-neighbour.com)",
