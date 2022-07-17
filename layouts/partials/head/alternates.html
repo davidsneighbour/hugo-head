@@ -2,8 +2,8 @@
   {{- range . -}}
   <link
     rel="{{- .Rel -}}"
-    type="{{- .MediaType.Type | safeHTMLAttr -}}"
-    href="{{- .Permalink | safeURL -}}"
+    {{ printf type="%q" .MediaType.Type | safeHTMLAttr }}
+    {{ printf href="%q" .Permalink | safeHTMLAttr }}
 
     {{/* hreflang="{{- site.LanguageCode -}}" */}}
     >
