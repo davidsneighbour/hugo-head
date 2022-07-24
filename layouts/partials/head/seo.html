@@ -1,8 +1,13 @@
 {{- with .Params.robots -}}
 <meta name="robots" content="{{ . }}">
 {{- else -}}
-<meta name="robots" content="index,follow">
-{{- end -}} {{ if ne .Page.Kind "404" }}
-{{- /* TODO: add function partial to check if canonical is required */ -}}
-<link rel="canonical" href="{{ .Permalink }}">
+  {{- if ne .Page.Kind "404" -}}
+    <meta name="robots" content="index,follow">
+  {{- else -}}
+    <meta name="robots" content="noindex,follow">
+  {{- end -}}
+{{- end -}}
+{{- if ne .Page.Kind "404" -}}
+  {{- /* TODO: add function partial to check if canonical is required */ -}}
+  <link rel="canonical" href="{{ .Permalink }}">
 {{- end -}}
