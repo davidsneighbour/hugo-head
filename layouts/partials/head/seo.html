@@ -2,6 +2,7 @@
 <meta name="robots" content="{{ . }}">
 {{- else -}}
 <meta name="robots" content="index,follow">
-{{- end -}} {{- if (eq (.Params.canonical | default true) true) -}}
+{{- end -}} {{ if ne .Page.Kind "404" }}
+{{- /* TODO: add function partial to check if canonical is required */ -}}
 <link rel="canonical" href="{{ .Permalink }}">
 {{- end -}}
