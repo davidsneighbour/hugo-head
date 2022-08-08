@@ -1,12 +1,17 @@
-{{- with .Params.robots -}}
-<meta name="robots" content="{{ . }}">
+{{- if templates.Exists "partials/head/robots.html" -}}
+  {{- partial "head/robots.html" . -}}
 {{- else -}}
-  {{- if ne .Page.Kind "404" -}}
-    <meta name="robots" content="index,follow">
+  {{- with .Params.robots -}}
+  <meta name="robots" content="{{ . }}">
   {{- else -}}
-    <meta name="robots" content="noindex,follow">
+    {{- if ne .Page.Kind "404" -}}
+      <meta name="robots" content="index,follow">
+    {{- else -}}
+      <meta name="robots" content="noindex,follow">
+    {{- end -}}
   {{- end -}}
 {{- end -}}
+
 {{- if ne .Page.Kind "404" -}}
   {{- /* TODO: add function partial to check if canonical is required */ -}}
   <link rel="canonical" href="{{ .Permalink }}">
