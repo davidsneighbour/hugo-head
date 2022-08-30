@@ -4,8 +4,6 @@
     rel="{{- .Rel -}}"
     {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }}
     {{ printf "href=%q" .Permalink | safeHTMLAttr }}
-
-    {{/* hreflang="{{- site.LanguageCode -}}" */}}
     >
   {{- end -}}
 {{- end -}}
