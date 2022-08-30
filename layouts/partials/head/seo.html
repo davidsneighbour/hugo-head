@@ -2,7 +2,7 @@
   {{- partial "head/robots.html" . -}}
 {{- else -}}
   {{- with .Params.robots -}}
-  <meta name="robots" content="{{ . }}">
+  <meta name="robots" content="{{- . -}}">
   {{- else -}}
     {{- if ne .Page.Kind "404" -}}
       <meta name="robots" content="index,follow">
@@ -13,5 +13,5 @@
 {{- end -}}
 
 {{- if ne .Page.Kind "404" -}}
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{- .Permalink -}}">
 {{- end -}}
