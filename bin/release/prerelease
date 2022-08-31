@@ -19,7 +19,7 @@ SCRIPTPATH="$(
 )"
 CURPATH="$(pwd -P)"
 
-typos -- ./content
+typos --config node_modules/@davidsneighbour/config/typos.toml ./content
 
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
