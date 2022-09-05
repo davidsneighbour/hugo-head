@@ -2,7 +2,7 @@
 root = true
 
 [*]
-indent_style = space
+indent_style = tab
 indent_size = 2
 tab_width = 2
 end_of_line = lf
@@ -12,3 +12,7 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+intent_style = space
+
+[*.(yml|yaml)]
+intent_style = space
