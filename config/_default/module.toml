@@ -15,3 +15,9 @@ disable = false
 ignoreConfig = false
 ignoreImports = false
 path = "github.com/davidsneighbour/hugo-hooks"
+
+[[imports]]
+disable = false
+ignoreConfig = false
+ignoreImports = false
+path = "github.com/davidsneighbour/hugo-debug"
