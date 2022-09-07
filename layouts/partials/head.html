@@ -23,10 +23,11 @@
 {{- partial "func/hook.html" ( dict "hook" "head-post-seo" "context" . ) -}}
 {{- partialCached "head/series.html" . . -}}
 {{- partial "func/hook.html" ( dict "hook" "head-post-series" "context" . ) -}}
-{{- $paths := slice "head/social.html" "head/opensearch.html" "head/pwa.html" "head/humans.txt" -}}
-{{- range $paths -}}
-  {{- if templates.Exists ( printf "partials/%s" . ) -}}
-    {{- partialCached . $page $page -}}
+{{- $modules := slice "social" "opensearch" "pwa" "humans" -}}
+{{- range $modules -}}
+	{{- $template := printf "head/%s.html" . -}}
+  {{- if templates.Exists ( printf "partials/%s" $template ) -}}
+    {{- partialCached $template $page $page -}}
     {{- partial "func/hook.html" ( dict "hook" (printf "head-post-%s" .) "context" . ) -}}
   {{- end -}}
 {{- end -}}
