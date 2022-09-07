@@ -16,7 +16,8 @@
 {{- $paginator := .Scratch.Get "paginator" -}}
 {{- with $paginator -}}
 {{- if gt .PageNumber 1 -}}
-{{- $title = printf "%s (Page %d)" $title .PageNumber -}}
+{{- $pagenumber := printf (i18n "page-n") .PageNumber -}}
+{{- $title = printf "%s %s" $title $pagenumber -}}
 {{- end -}}
 {{- end -}}
 {{- end -}}
