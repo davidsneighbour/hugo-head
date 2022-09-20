@@ -1,2 +1,3 @@
+
 [page-n]
-others = " (Page %s)"
+other = " (Page %d)"
