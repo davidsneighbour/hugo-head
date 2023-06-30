@@ -1,4 +1,5 @@
 #!/bin/bash
+# v20230630.1
 
 REQUIRED_TOOLS=(
   git
@@ -11,6 +12,8 @@ for TOOL in "${REQUIRED_TOOLS[@]}"; do
   fi
 done
 
+VERSION=$(node -pe 'require("./package.json")["version"]')
+
 FILE=.env
 if [ -f "$FILE" ]; then
   echo "exporting .env"
@@ -20,6 +23,9 @@ if [ -f "$FILE" ]; then
   # shellcheck source=/dev/null
   source "${FILE}"
   set +a # stop exporting
+else
+  echo "no .env file found"
+  exit 0
 fi
 
 # update version in citation configuration
