@@ -6,6 +6,8 @@ github.com/davidsneighbour/hugo-social v0.1.12 h1:iPMoOCRQ74sdf2/7waRWzT/sz+m7/F
 github.com/davidsneighbour/hugo-social v0.1.12/go.mod h1:zxqIAvm1Q/BTzZHnV5jlyiSbfhoE1SJ6qbgpt1H/ni0=
 github.com/davidsneighbour/hugo-social v0.1.13 h1:r6+BbYQG4flm+LKlh9aliHvupe/Pr9kGFfexRzoYpPs=
 github.com/davidsneighbour/hugo-social v0.1.13/go.mod h1:zxqIAvm1Q/BTzZHnV5jlyiSbfhoE1SJ6qbgpt1H/ni0=
+github.com/davidsneighbour/hugo-social v0.1.14 h1:ECD/Q4w4A7F95FdGgJnMzp2A6CSbxcv37C3n6cA3hEs=
+github.com/davidsneighbour/hugo-social v0.1.14/go.mod h1:zxqIAvm1Q/BTzZHnV5jlyiSbfhoE1SJ6qbgpt1H/ni0=
 github.com/tabler/tabler-icons v2.23.0+incompatible h1:nybfK5B2+mryBES0C2OMiYIAz3Ps9kxP3uYmn6R8SUg=
 github.com/tabler/tabler-icons v2.23.0+incompatible/go.mod h1:Ap75CRdhXxprnUnPlUCRLvJ2pIFNqwxIipj3GfD6XHE=
 github.com/tailwindlabs/heroicons v2.0.18+incompatible h1:9rm5lZcJ6mT4j9F/9LDaS/Roz6hgyKkaLVbm+b4l9YY=
