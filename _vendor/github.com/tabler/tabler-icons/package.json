@@ -60,7 +60,7 @@
     "@rollup/plugin-commonjs": "15.1.0",
     "@rollup/plugin-node-resolve": "9.0.0",
     "@svgr/babel-plugin-replace-jsx-attribute-value": "5.0.1",
-    "@svgr/core": "5.4.0",
+    "@svgr/core": "5.5.0",
     "@vue/babel-plugin-jsx": "^1.1.1",
     "adm-zip": "^0.5.10",
     "cheerio": "^1.0.0-rc.12",
