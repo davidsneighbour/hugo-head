@@ -67,7 +67,7 @@
     "csv-parser": "^3.0.0",
     "esbuild": "^0.17.5",
     "fs-extra": "^10.1.0",
-    "glob": "7.1.6",
+    "glob": "7.2.3",
     "html-minifier": "^4.0.0",
     "lodash.template": "4.5.0",
     "minimist": "1.2.8",
