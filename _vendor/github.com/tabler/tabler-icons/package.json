@@ -50,10 +50,10 @@
   "devDependencies": {
     "@atomico/rollup-plugin-sizes": "^1.1.4",
     "@babel/cli": "^7.20.7",
-    "@babel/core": "7.22.8",
+    "@babel/core": "7.22.9",
     "@babel/parser": "7.22.7",
     "@babel/plugin-transform-runtime": "^7.19.6",
-    "@babel/preset-env": "7.22.7",
+    "@babel/preset-env": "7.22.9",
     "@babel/preset-react": "7.22.5",
     "@release-it-plugins/workspaces": "^3.2.0",
     "@rollup/plugin-babel": "5.3.1",
